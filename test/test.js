@@ -13,5 +13,9 @@ describe('String Calculator', function() {
     it('should return the sum of multiple numbers', function() {
         expect(add('1,6')).to.equal(7);
     });
+
+    it('should handle new lines between numbers', function() {
+        expect(add('1\n4,6')).to.equal(11);
+    });
 });
 
