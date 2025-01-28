@@ -17,5 +17,9 @@ describe('String Calculator', function() {
     it('should handle new lines between numbers', function() {
         expect(add('1\n4,6')).to.equal(11);
     });
+
+    it('should handle custom delimiters', function() {
+        expect(add('//;\n1;2')).to.equal(3);
+    });
 });
 
