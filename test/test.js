@@ -9,5 +9,9 @@ describe('String Calculator', function() {
     it('should return the number for a single number', function() {
         expect(add('1')).to.equal(1);
     });
+
+    it('should return the sum of multiple numbers', function() {
+        expect(add('1,6')).to.equal(7);
+    });
 });
 
