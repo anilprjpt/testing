@@ -21,5 +21,9 @@ describe('String Calculator', function() {
     it('should handle custom delimiters', function() {
         expect(add('//;\n1;2')).to.equal(3);
     });
+
+    it('should throw an exception for negative numbers', function() {
+        expect(() => add('1,-2')).to.throw('negative numbers not allowed -2');
+    });
 });
 
